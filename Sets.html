@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="disp"></p>
+    <script>
+        const train=new Set(["priya","sej","tia","zia","sej"])
+        document.write("size of set "+train.size +"<hr>")
+        train.add("sia")
+        var h=train.has("priya")
+        train.delete("tia")
+        let elems=""
+        for(var x of train.values()){
+            elems+=x
+            document.write("elems of set "+x +"<hr>")
+        }
+        let text=""
+        train.forEach(function(value){
+            text+=value;
+        })
+        document.write("from text "+text+"<br>")
+        document.write("size of set after clearing tia "+train.size +"<hr>")
+        document.write("does set has value priya? "+h +"<hr>")
+    
+    //Maps
+    const people=new Map([["name","sejal"],
+["week1",32],["week2",22]]);
+people.set(["ses",33])
+people.set("week3",72);
+people.get("name")
+people.delete("week3")
+let ha=people.has("name"); let vals=""
+people.forEach((value)=>{
+vals+=value
+})
+document.write(vals)
+document.write("<br>"+typeof "sejal" + "<hr>" + typeof NaN+"<hr>"+typeof false+ "<hr>" +typeof zensar + "<hr>" +typeof [12,33] + "<hr>" +typeof {"sejal":23} + "<hr>" +typeof "22" + "<hr>")
+    </script>
+</body>
+</html>

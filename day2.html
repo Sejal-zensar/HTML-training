@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html training , zensar training , frontend training">
+    <meta name="description" content="zensar training ">
+    <meta name="author" content="Sejal gujar">
+    <link href="StyleSheet.css" rel="stylesheet">
+    
+    <title>Tables in html</title>
+</head>
+<body>
+    <h1><i>Inline , internal , external css</i></h1><hr>
+    <table id="table1" style="width: 100%; border-color: darkblue; border: 2px solid; border-collapse: collapse;justify-content: center;text-align: center;">
+        <caption><h2>Inline css example</h2></caption>
+        <tr style=" color:black; " >
+            <th  style="background-color:aquamarine;"> <h2>Tags</h2> </th>
+            <th  style="background-color:aquamarine;"><h2>Description</h2>  </th>
+         </tr>
+         <tr>
+             <td>br</td>
+             <td>takes cursor to new line</td>
+         </tr>
+         <tr>
+            <td>hr</td>
+            <td>draw horizontal line</td>
+        </tr>
+        <tr>
+            <td>b</td>
+            <td><b>bold font</b></td>
+        </tr>
+        <tr>
+            <td>i</td>
+            <td><i>italic font</i></td>
+        </tr>
+        <tr>
+    </table>
+    <table id="table2">
+        <caption><h2>Internal css example</h2></caption>
+        <style>
+            table,td,th{
+                border: 1px black solid;
+               
+            }
+            #table2{
+                width: 100%;
+                text-align: center;
+                justify-content: center;
+               
+                margin-top: 30px;
+            }
+            th{
+                background-color: coral;
+            }
+        </style>
+        <tr style=" color:black;">
+            <th > <h2>Tags</h2> </th>
+            <th ><h2>Description</h2>  </th>
+         </tr>
+         <tr>
+            <td>pre</td>
+            <td> <pre>pre formatted text</pre> tag</td>
+        </tr>
+        <tr>
+            <td>strong</td>
+            <td> this is <strong>strong</strong>  tag</td>
+        </tr>
+        <tr>
+            <td>sup</td>
+            <td>This is <sup>superscript </sup>  tag</td>
+        </tr>
+        <tr>
+            <td>sub</td>
+            <td>this is <sub>subscript</sub> tag</td>
+        </tr>
+        
+    </table>
+    
+    <table id="table3" >
+        <caption><h2>External css example</h2></caption>
+        <tr style=" color:black;">
+            <th class="headers"> <h2>Tags</h2> </th>
+            <th class="headers"><h2>Description</h2>  </th>
+         </tr>
+         <tr>
+            <td>em</td>
+            <td> This is <em>emphasis </em>  tag</td>
+        </tr>
+        <tr>
+            <td>mark</td>
+            <td>This is <mark>mark</mark> tag</td>
+        </tr>
+        <tr>
+            <td>small</td>
+            <td>This is <small>small</small> tag </td>
+        </tr>
+        <tr>
+            <td>del</td>
+            <td>This is <del>delete</del>  tag</td>
+        </tr>
+        <tr>
+            <td>ins</td>
+            <td>This is  <ins>insert</ins>  tag</td>
+        </tr>
+    </table>
+    <dl>
+        <dt>DATA TITLE:</dt>
+        <dd>data descripdtion(dl,dd,dt example).</dd>
+    </dl>
+    <div id="it">
+     <p id="catpara"><h2>Backgrounf image cover example</h2><br>A mountain is an elevated portion of the Earth's crust, generally with steep sides <br>
+         that show significant exposed bedrock. A mountain differs from a plateau in having a <br>
+         limited summit area, and is larger than a hill, typically rising at least 300 metres (1000 feet)<br>
+          above the surrounding land.<br>
+          A few mountains are isolated summits, but most occur in mountain ranges.<br>
+        </p>
+    </div>
+    <div id="canva">
+        <canvas id="myCanvas" width="500" height="500" style="border:1px solid #000000;">This is in canvas
+         <circle cx="50" cy="50" r="80" stroke="red" stroke-width="3" fill="blue"></circle>
+        </canvas>
+        <svg width="200" height="300">
+            <circle cx="50" cy="50" r="80" stroke="red" stroke-width="3" fill="blue"></circle>
+        </svg>
+    </div>
+    <div id="layout" style="width: 100%; height: 500px; background-color: burlywood;">
+        <section id="sec1" style="height: 70px; background-color: blueviolet;padding: 3px;">
+           <h1>HTML WEB PAGE BASIC LAYOUT 1</h1>
+        </section>
+        <section id="sec2" style="height: 40px; background-color: rgb(113, 158, 241);">
+
+            Section 2 NAVIGATION 
+         </section>
+         <section id="sec3" style="height: 390px; background-color: rgb(236, 220, 77); width:130px">
+             section 3 SIDE BAR 
+         </section>
+         <section id="sec6" style="height: 390px; background-color: rgb(82, 6, 72); width:130px; color: wheat;">
+            Section 6 SIDE BAR 2
+         </section>
+         <section id="sec4" style="height: 340px; background-color: rgb(173, 240, 142);">
+            <h2>Section 4 Center section / main section 4</h2>
+            <p>A mountain is an elevated portion of the Earth's crust, generally with steep sides <br>
+                that show significant exposed bedrock. A mountain differs from a plateau in having a <br>
+                limited summit area, and is larger than a hill, typically rising at least 300 metres (1000 feet)<br>
+                 above the surrounding land</p>
+           
+         </section>
+         <section id="sec5" style="height: 50px; background-color: rgb(235, 80, 8);">
+            FOOTER section 5
+         </section>
+         
+    </div>
+    <div style="margin-top: 50px;"><img  id="resimg" src="download.jfif"></div>
+    <picture style="width: 100%; height: 500px; margin-top: 50px;">
+        <source srcset="downloadphone.jfif" media="(max-width:600px)">
+        <source srcset="downloadtab.jfif" media="(max-width:1500px)">
+        <source srcset="downloadlaptop.jfif">
+        <img src="images/cat1.jfif">
+    </picture>
+
+
+    <table>
+        <tr>
+            <th>Sr.no</th>
+            <th>Name</th>
+            <th>Salary</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ZYX</td>
+            <td>&#X20B9; 20000</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>ABC</td>
+            <td>&#36; 2000</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>DDS</td>
+            <td>&#X20AC;  5000</td>
+        </tr>
+       
+    </table><hr>
+    <button type="buttom" onclick="seeDate()" id="btn">date</button>
+    <p id="demo">
+
+       
+    </p>
+<hr>
+    <div id="reports">
+        <button type="buttom" onclick="seeReport()" id="ind">INDIA</button>
+        <button type="buttom" onclick="seeReport2()" id="usa">AMERICA</button>
+        <button type="buttom" onclick="seeReport3()" id="eu">EUROPE</button>
+        <table id="india" style="display: none;">
+            <caption>INDIA REPORTS</caption>
+            <tr>
+                <th>Sr.no</th>
+                <th>Name</th>
+                <th>Salary</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>ZYX</td>
+                <td>&#X20B9; 20000</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>ZYX</td>
+                <td>&#X20B9; 20000</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>ZYX</td>
+                <td>&#X20B9; 20000</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>ZYX</td>
+                <td>&#X20B9; 20000</td>
+            </tr>
+            </table>
+
+            <table id="america" style="display: none;">
+                <caption>AMERICA REPORTS</caption>
+                <tr>
+                    <th>Sr.no</th>
+                    <th>Name</th>
+                    <th>Salary</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ZYX</td>
+                    <td>&#36;2000</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ZYX</td>
+                    <td>&#36;2000</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ZYX</td>
+                    <td>&#36;2000</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ZYX</td>
+                    <td>&#36;2000</td>
+                </tr>
+            </table>
+
+            <table id="europe" style="display: none;">
+                <caption>EUROPE REPORTS</caption>
+                <tr>
+                    <th>Sr.no</th>
+                    <th>Name</th>
+                    <th>Salary</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ZYX</td>
+                    <td>&#X20AC; 2000</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ZYX</td>
+                    <td>&#X20AC; 2000</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ZYX</td>
+                    <td>&#X20AC; 2000</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ZYX</td>
+                    <td>&#X20AC; 2000</td>
+                </tr>
+            </table>
+
+    </div>
+    <br>
+    <hr>
+    <pre><q> Developed by:<strong>Sejal Gujar</strong> 
+    Satara,Maharashtra.
+    Training day 2 (CSS)
+    22/03/2022 </q>
+    </pre>
+    <script src="script.js"></script>
+</body>
+</html>

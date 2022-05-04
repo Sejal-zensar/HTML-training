@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Q4mentor</title>
+
+<script>
+function dfunction() {
+document.getElementById("demo").innerHTML=Date()
+document.getElementById("demo").style.fontsize="40px"
+document.getElementById("demo").style.fontfamily="verdana"
+}
+function sfunction() {
+document.getElementById("demo1").innerHTML="Welcome"
+document.getElementById("demo1").style.color="red"
+}
+
+
+</script>
+</head>
+ 
+<body>
+
+
+<!--
+<p>
+Wikipedia has been criticized for its uneven accuracy and for exhibiting systemic bias, including gender bias, with the majority of editors being male.[4] Edit-a-thons have been held to encourage female editors and increase the coverage of women's topics.[10] In 2006, Time magazine stated that the open-door policy of allowing anyone to edit had made Wikipedia the biggest and possibly the best encyclopedia in the world, and was a testament to the vision of Jimmy Wales.[11] The project's reputation improved further in the 2010s as it increased efforts to improve its quality and reliability, based on its unique structure, curation and absence of commercial bias.[4] In 2018, Facebook and YouTube announced that they would help users detect fake news by suggesting links to related Wikipedia articles
+</p>
+-->
+<p id="demo"> </p>
+<p id="demo1"> </p>
+<p id= "demo2"> </p>
+<p id= "demo3"> </p>
+<p id= "demo4"> </p>
+<p id= "demo5"> </p>
+<p id= "demo6"> </p>
+<p id= "demo7"> </p>
+<p id= "demo8"> </p>
+<p id= "demo9"> </p>
+<p id= "demo10"> </p>
+<p id= "demo11"> </p>
+<p id="image"> </p>
+
+<script>
+try {
+var str1="Wikipedia has been criticized for its uneven# accuracy akkuracy ekkuracy and for exhibiting systemic bias, including gender bias, with the majority of editors being male.[4] Edit-a-thons have been held to encourage female editors and increase the coverage of women's topics.[10] In 2006, Time magazine stated that the open-door policy of allowing anyone to edit had made Wikipedia the biggest and possibly the best encyclopedia in the world, and was a testament to the vision of Jimmy Wales.[11] The project's reputation improved further in the 2010s as it increased efforts to improve its quality and reliability, based on its unique structure, curation and absence of commercial bias.[4] In 2018, Facebook and YouTube announced that they would help users detect fake news by suggesting links to related Wikipedia articles"
+var count=str1.search(/criticized/gi);
+document.getElementById("demo2").innerHTML="criticized count = "+ count;
+var repl =str1.replace(/criticized/i, "appreciated");
+document.getElementById("demo3").innerHTML="this is repl1 :"+ repl;
+var mat1=str1.match(/[a|e][c|k][c|k]uracy/gi);
+var mat2 =str1.match(/\u0023/g);
+
+var password =prompt("enter password");
+//var tst1=str1.test(/[a|e][c|k][c|k]uracy/);
+document.getElementById("demo4").innerHTML=" this is mat1[0] "+mat1[0];
+document.getElementById("demo6").innerHTML=" this is mat1[1] "+mat1[1];
+document.getElementById("demo5").innerHTML=" this is mat1 length "+mat1.length;
+document.getElementById("demo7").innerHTML="test";
+document.getElementById("demo7").innerHTML=str1.test(/accuracy/);
+document.getElementById("demo8").innerHTML=" this is mat2 length "+ mat2.length;
+document.getElementById("demo9").innerHTML=" this is mat2[0] "+mat2[0];
+}
+
+catch (err) {
+
+document.getElementById("demo10").innerHTML=err.name;
+}
+finally {
+document.getElementById("demo11").innerHTML="This system is dead retsart";
+}
+</script>
+
+<button type="submit" onclick="dfunction()">
+Click Here </button>
+<button type="submit" onclick="sfunction()">
+Click Date </button>
+
+<button type="submit" onclick=document.getElementById("demo2").innerHTML=str1>Click Here</button>
+
+<noscript>
+This is not supported
+</noscript>
+</body>
+</html>

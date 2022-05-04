@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><h1>Numbers in JS (28th march)</h1>></title>
+</head>
+<body>
+    <h2>JS numbers are 64 bit floating numbers always</h2>
+    <h3>-15 digit number will be displayed as it is<br>-15+ digit numbers will be rounded off</h3>
+    <script>
+        let number1=999999999999999;
+        let number2=9999999999999999;
+        let num3=0.2+0.2
+        let num4=0.0044444
+        let number5=20
+        let str="sejal"
+        let n14=NaN
+        let num14="100";
+
+        let num18=Number(125)
+        document.write(Number.MAX_SAFE_INTEGER +"<br>")
+        document.write(Number.MAX_VALUE +"<br>")
+        document.write(Number.MIN_SAFE_INTEGER +"<br>")
+        document.write(Number.MIN_VALUE +"<br>")
+        document.write(Number.NEGATIVE_INFINITY+"<br>")
+        document.write(Number.parseFloat("123") )
+        
+        document.write(num18+"<br>")
+        document.write(2/0)
+        let x= n14+num14
+        document.write(x +"<br>")
+        document.write(number5/str +"<br>")
+        document.write(num4.toFixed(3) +"<br>")
+        document.write(number1 +"<br>");
+        document.write(number2 +"<br>")
+        document.write(num3)
+    </script>
+</body>
+</html>

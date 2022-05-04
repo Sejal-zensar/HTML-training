@@ -1,0 +1,80 @@
+body{
+padding: 10px;
+letter-spacing: 1.2px;
+text-align: center;
+}
+#header{
+    width: 100%;
+    height: 70px;
+    background-color: bisque;
+}
+#nav{
+    width: 100% !important;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    text-decoration:none;
+    
+}
+#list{
+    background-color: darkslategrey;
+    padding: 15px;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-decoration:none;
+}
+.subli{
+    font-size: 1.1rem;
+   color: white;
+    justify-content: space-around;
+    text-decoration:none;
+}
+#sidebar{
+    display: flex;
+    float: left;
+    height: 500px;
+    background-color: cornflowerblue;
+    width: 170px;
+    margin-top: 30px;
+    text-align: center;
+    padding: 2px;
+}
+#sidelist{
+    display: flex;
+    flex-direction: column;
+    margin-top:50px;
+    
+}
+.sli{
+    margin-top: 15px;
+    text-decoration: none;
+}
+#logo{
+    margin-top: 30px;
+    height: 500px;
+}
+#summary{
+    margin-top: 40px;
+    text-align: center;
+    display: flex;
+    background-color: coral;
+    height: 30px;
+    padding: 5px;
+    
+}
+.sum{
+    text-align: center !important;
+    display: flex;
+    margin-left: 250px;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+#icon{
+    height: 70px;
+    width: 90px;
+    float: left;
+    margin-left: 20px;
+}

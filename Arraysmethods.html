@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="dates"></p>
+    <p id="math"></p>
+    <script>
+        let date1=new Date()
+        const Arr1=[4,9,49,64]
+        const newarr=Arr1.map(Math.sqrt)
+var m1=Math.E;
+var m2=Math.LN10;
+var m3=Math.abs(-1292)
+var m4=Math.ceil(10.22321)
+var m5=Math.floor(144.989)
+var m6=Math.PI;
+var m7=Math.SQRT1_2
+var m88=Math.round(56.77)
+var m8=Math.pow(33,2)
+var m9=Math.cos(90)
+var m10=Math.max(11,23,456,33,2)
+var m11=Math.min(11,23,456,33,2)
+var m12=Math.log10(39)
+var m13=Math.random()
+var m15=Math.SQRT2
+var m16=Math.LN2
+var m17=Math.LOG10E
+var m18=Math.LOG2E
+
+
+        document.getElementById('dates').innerHTML=date1.getMilliseconds()
+        document.getElementById('dates').innerHTML=date1.getUTCDate()
+        document.getElementById('dates').innerHTML=date1.setMonth(02)
+        document.getElementById('dates').innerHTML=date1.toString()
+        document.getElementById('dates').innerHTML=date1.getFullYear()
+        document.getElementById('dates').innerHTML=newarr 
+        document.write("<hr>")
+        document.getElementById('math').innerHTML=("m1: "+m1)
+        document.write("m2: "+m2 +"<hr>") 
+        document.write("m3: "+m3 +"<hr>")
+        document.write("m4: "+m4+"<hr>")
+        document.write("m5: "+m5+"<hr>")
+        document.write("m6: "+m6+"<hr>")
+        document.write("m7: "+m7+"<hr>")
+        document.write("m88: "+m88+"<hr>")
+        document.write("m8"+m8+"<hr>")
+        document.write("m9: "+m9+"<hr>")
+        document.write("m10: "+m10+"<hr>")
+        document.write("m11: "+m11+"<hr>")
+        document.write("m12: "+m12+"<hr>")
+        document.write("m13: "+m13+"<hr>")
+        document.write("m15: "+m15+"<hr>")
+    </script>
+</body>
+</html>

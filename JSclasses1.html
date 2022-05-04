@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JSthis</title>
+<meta charset = "UTF-8"> </meta>
+  </head>
+<body>
+<p id="demo"> </p>
+<p id="demo1"> </p>
+<p id="demo2"> </p>
+
+<script>
+class car{
+constructor(company,category,model,color,variant,price,year) {
+this.company  = company;
+this.category = category;
+this.model = model;
+this.color = color;
+this.variant = variant;
+this.price = price;
+this.year=year;
+}
+age(){
+let date= new Date();
+return date.getFullYear()-this.year;
+}
+
+
+}
+
+function objrefer1() {
+tataCar = new car("TATA", "SUV", "Nexon", "Red", "Petrol", 1050000,2018);
+return tataCar.company + tataCar.category;
+}
+
+mahindraCar = new car("mahindra", "SUV", "XUV500", "Red", "Petrol", 1450000,2015);
+
+suzukicar =new car("maruti","hatchback","Baleno","white","petrol",750000,2010);
+
+</script>
+
+<button type="submit" onclick=document.getElementById("demo").innerHTML=mahindraCar.company>Mahindra</button>
+<button type="submit" onclick=document.getElementById("demo1").innerHTML=mahindraCar.price>MahendraPrice</button>
+
+<button type="submit" onclick=document.getElementById("demo2").innerHTML=suzukicar.age()>SuzukiPrice</button>
+
+
+
+<noscript>
+This is not supported
+</noscript>
+</body>
+</html>

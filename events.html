@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="StyleSheet.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body style="text-align: center; padding: 10px;">
+    <h1>EVENTS IN JS 25 march 2022</h1>
+    <p onmouseover="changeme()" id="para">this is para</p>
+    <button id="btn">move me</button>
+    <button onclick="goup()" id="btnup">up</button>
+    <button onclick="godown()" id="btndown">down</button><hr>
+    <input id="textinput" onchange="typetext()" style="width: 70%;" type="text " placeholder="type something"><hr>
+    <select style="padding: 10px;" id="select" onchange="onchangefunc()">
+    <option value="BE">BE</option>
+    <option value="TE">TE</option>
+    <option value="SE">SE</option>
+    <option value="FE">FE</option>
+    
+
+    </select><hr>
+    <button id="doubleclick" ondblclick="double()">double click on me</button><br>
+    <table id="india" style="display: none; margin-left: 550px; margin-top: 50px;">
+        <caption>INDIA REPORTS</caption>
+        <tr>
+            <th>Sr.no</th>
+            <th>Name</th>
+            <th>Salary</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ZYX</td>
+            <td>&#X20B9; 20000</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ZYX</td>
+            <td>&#X20B9; 20000</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ZYX</td>
+            <td>&#X20B9; 20000</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ZYX</td>
+            <td>&#X20B9; 20000</td>
+        </tr>
+        </table>
+    <p id="paraselect"></p>
+    <script>
+        function double(){
+            document.getElementById('doubleclick').style.padding="30px";
+            document.getElementById('india').style.display="block"
+        }
+        function changeme(){
+            document.getElementById('para').style.fontSize="2rem";
+            document.getElementById('para').style.color="blue";
+        }
+        function goup(){
+            document.getElementById('btn').style.position="relative"
+            document.getElementById('btn').style.bottom="30px"
+        }
+        function godown(){
+            document.getElementById('btn').style.position="relative"
+            document.getElementById('btn').style.top="30px"
+        }
+        function typetext(){
+            document.getElementById('textinput').style.backgroundColor="red";
+            document.getElementById('textinput').style.color="white";
+            document.getElementById('textinput').style.padding="10px";
+        }
+        function onchangefunc(){
+            year=document.getElementById('select').value;
+            document.getElementById('paraselect').innerHTML="you are in   "+year;
+        }
+    </script>
+</body>
+</html>

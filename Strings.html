@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para"></p>
+    <script>
+         var mystr="this is zensar training day 4 "
+        document.write(mystr.lastIndexOf("zensar"))
+        document.write(mystr.indexOf("day"))
+        let nstr="smita"
+       let templatetext=`welcome ${nstr}`
+       document.write(templatetext)
+        var mystrss=mystr.split(" ",2)
+        document.write(mystrss)
+        
+        let str1=new String("smita")
+        nstr=nstr.replace("/Smita/i","seju")
+        document.write(nstr)
+        str1:{
+            len="39",
+            col="white"
+        }
+        document.write(str1==nstr)
+        let name="sejal"
+        let lname="gujar"
+        let loc="loc is \"satara\""
+        document.getElementById('para').innerHTML="<mark>"+name+" "+lname+"</mark>"+"<br>"+loc
+    </script>
+</body>
+</html>

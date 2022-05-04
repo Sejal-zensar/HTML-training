@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional statements</title>
+</head>
+<body>
+    <p id="d1"></p>
+    <p id="marks"></p>
+    <p id="days"></p>
+    <p id="tr"></p>
+
+    Enter Avg marks:<input onchange="getmarks()" style="padding: 10px;" type="number" id="inp1">
+    <script>
+let trainee =["sejal","anup","monika","sarika","tamal","arpit","zara"]
+let i,len, alltraine;
+for( i=0,len=trainee.length,alltraine=[];i<len;i++){
+    alltraine+=trainee[i] +"<hr>"
+}
+document.getElementById('tr').innerHTML=alltraine
+        var year=" "
+if(new Date().getFullYear()==2022){
+   year="present year"
+
+}else{
+    year="Invalid"
+}
+document.getElementById('d1').innerHTML="present year? "+year
+
+
+
+//avg marks ifelse
+var status=""
+function getmarks(){
+    var avgmarks=Number(document.getElementById('inp1').value)
+    //document.write(avgmarks)
+    if(avgmarks<40){
+status="Fail"
+}
+else if(avgmarks<=60 ){
+    status="First class"
+}
+else if(avgmarks<=100){
+    status="Distinction"
+}
+else{
+    status="invalid marks"
+}
+document.getElementById('marks').innerHTML="STATUS: "+status
+
+}
+
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+     day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case 6:
+    day = "Saturday";
+}
+document.getElementById('days').innerHTML="Switch case present day: "+day
+    </script>
+</body>
+</html>

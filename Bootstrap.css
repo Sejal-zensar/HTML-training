@@ -1,0 +1,13 @@
+body{
+    padding: 20px;
+}
+#main{
+    margin-top: 10px;
+}
+#india,#america,#europe{
+    margin-top: 60px;
+}
+#resimg{
+    margin: 60px;
+    align-items: center;
+}

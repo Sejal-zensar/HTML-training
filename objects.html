@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object study</title>
+</head>
+<body>
+    <p id="person"></p>
+    <p id="person1"></p>
+    <p id="expara"></p>
+<table class="table">
+    <tr>
+<td class="head n" id="h1">name</td>
+<td class="head ln" id="h2">lname</td>
+<td class="head ag" id="h3">age</td>
+<td class="head ad" id="h4">add</td>
+    </tr>
+    <tr>
+        <td class="data" id="td1"><script>document.getElementById('td1').innerHTML=this.name</script></td>
+        <td class="data" id="td2"><script>document.getElementById('td2').innerHTML=this.lname</script></td>
+        <td class="data" id="td3"><script>document.getElementById('td3').innerHTML=this.age</script></td>
+        <td class="data" id="td4"><script>document.getElementById('td4').innerHTML=this.add</script></td>
+    </tr>
+</table>
+    <script>
+        
+        let member={
+            name:"sejal",
+            lname:"gujar",
+            age:23,
+            add:"satara"
+
+        }
+        let txt=""
+        for(x in member){
+            txt+=member[x]+" "
+        }
+        document.getElementById('expara').innerHTML=txt
+        var hs=[h1,h2,h3,h4]
+        var ds=[td1,td2,td3,td4]
+      
+      
+     
+        document.getElementById('person').innerHTML=member.name;
+      
+    </script>
+</body>
+</html>

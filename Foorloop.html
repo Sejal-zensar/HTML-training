@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CHANGES MADE FOR getElementById
+
+
+        
+    </h1>
+    <p id="d1"></p>
+    <p id="wloop"></p>
+    <script>
+        const trainee ={ week1:25,week2:28,week3:39,week4:40};
+        var avg=0;
+        var len=Object.keys(trainee)
+        
+        for (let value in trainee){
+            //document.write(trainee[value]+" , ")
+            avg=avg+trainee[value]
+        }
+        document.write("average marks= "+avg/(len.length))
+
+        //foreach eg
+        const array1=[44,66,54,78,32];
+        let val=[]
+        array1.forEach(myfunc)
+        document.getElementById('d1').innerHTML=val;
+        function myfunc(value){
+            val+=value+"<hr>"
+        }
+        
+        //for i of eg...in for loop 
+        let companies=["zensar", "wipro", "infosys"]
+        let comp="Zensar"
+        let c=[] , s=[]
+        for(let i of companies){
+            c+="<br>"+i+"<hr>";
+        }
+        for(z of comp){
+s+=z+"<hr>"
+        }
+        document.write(c)
+        document.write(s)
+
+        //while loop
+        let i=0;
+        disp=[]
+        while(i<10){
+        disp+=i +"<hr>"
+        i++
+        }
+        
+        document.getElementById('wloop').innerHTML="while loop :<br>"+disp
+    let v=0;
+    let d=[]
+ for(let i=0;i<10;i++){
+     if(i==3){
+         continue;
+     }
+     document.write(i+"<hr>")
+ }
+    
+    </script>
+</body>
+</html>
+
+

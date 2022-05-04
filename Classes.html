@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+</head>
+<body>
+
+
+    <h1>git training changes</h1>
+    <p id="d1"></p>
+    
+    <script>
+   
+class Myclass {
+    constructor(name,lastname,age,empid,loc,birthyear){
+this.name=name;
+this.lastname=lastname;
+this.age=age;
+this.empid=empid;
+this.loc=loc;
+this.birthyear=birthyear
+    }
+   age(){
+       var date=new Date()
+       return date.getFullYear()-p1.age
+   }
+   
+}
+function fullname(){
+    return p1.name+" "+p1.lastname
+}
+p1=new Myclass("sejal","gujar","23","66927","satara",1999)
+document.write(fullname())
+document.getElementById('d1').innerHTML=Myclass.age()
+    </script>
+</body>
+</html>

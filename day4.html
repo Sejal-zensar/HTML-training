@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day4 docscriptt</title>
+</head>
+<body>
+    <style>
+        .head{
+            padding: 6px;
+             border: 1px black solid;
+        }
+        #data1,#data2,#data3,#data4{
+            padding: 6px;
+            border: 1px black solid;
+        }
+    </style>
+    <table style="padding: 10px; border: 1px black solid; width: 100%;height:200px;text-align: center;">
+        <tr id="tr1" >
+            <th class="head">addition</th>
+            <th class="head">modulus</th>
+            <th class="head">division</th>
+            <th class="head">multiplication</th>>
+        </tr>
+        <tr>
+            <td id="data1"><script>document.getElementById('data1').innerHTML=n1+n1</script></td>
+            <td id="data2"></td>
+            <td id="data3"></td>
+            <td id="data4"></td>
+        </tr>
+    </table>
+
+    <p id="demo"></p>
+    <p></p>
+    <button type="button" onclick="document.getElementById('demo').innerHTML=Date()">click</button>
+    <button onclick="alertme()">alert button</button>
+    <script>
+        var x=4;
+        var y=11;
+        var q="cat"
+        console.log("var x=4 var y=11; var q=cat");
+        function alertme(){
+            alert('you clicked the alert button')
+        }
+       
+      
+        var n1,n2,n2;
+        n1=20;n2=30;
+        
+        add=n1+n2
+        mod=Math.ceil(n1/n2)  
+        div=n1%n2
+        mul=n1*n2
+        document.getElementById('data1').innerHTML=add;
+        document.getElementById('data2').innerHTML=mod;
+        document.getElementById('data3').innerHTML=div;
+        document.getElementById('data4').innerHTML=mul;
+        var y=document.getElementsByTagName("p")[0].innerHTML=n3;
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arow function</title>
+</head>
+<body>
+    <p id="d1"></p>
+    <p id="d2"></p>
+    <p id="d3"></p>
+    
+    <button onclick="func()">Click me</button>
+    <script>
+        let sum1=(n1,n2)=>n1+n2
+        let name=(s1,s2)=>s1+s2
+func=()=>{ document.write(Date())}
+document.getElementById('d1').innerHTML=sum1(12,333) +" This is n1+n2"
+//document.getElementById('d3').innerHTML=func()+" this is func"
+document.getElementById('d2').innerHTML=sum1("sejal","gujar") +" This is s1+s2"
+    </script>
+</body>
+</html>

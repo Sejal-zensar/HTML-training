@@ -1,0 +1,93 @@
+#table3{
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    
+}
+.headers{
+    background-color:rgb(212, 146, 4);
+    
+}
+h1{
+    text-align: center;
+    letter-spacing: 1px;
+}
+td,th{
+    padding: 10px;
+}
+hr{
+    border: 2px darkred solid;
+}
+body{
+    font-size: 1rem;
+    padding: 10px;
+}
+pre{
+    text-align: center;
+    margin-top: 30px;
+}
+
+#it{
+    background-color: cornflowerblue;
+    
+    position: relative;
+    height: 500px;
+    width: 100%;
+    background-image: url("images/cat1.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#catpara{
+    top: 100px;
+    left: 70px;
+    position: relative;
+    margin-top: 30px;
+    font-size: 1.2rem;
+}
+#sec3{
+    display: flex;
+    float: left;
+}
+#layout{
+    text-align: center;
+}
+#sec6{
+    display: flex;
+    float: right;
+}
+#sec4{
+    background-image: url("download.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -20px;
+}
+#resimg{
+    width: 70%;
+    height: 500px;
+}
+@media screen and (max-width: 992px) {
+    #resimg{
+        margin-top: 70px;
+        height:300px;
+        width: 80%;
+    }
+}
+@media screen and (max-width: 667px){
+
+    #india{
+        display: none;
+    }
+}
+#reports{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+button{
+    padding: 10px;
+    height: fit-content;
+}
+#india{
+    
+    column-gap: 30px;
+}

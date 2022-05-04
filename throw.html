@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Throw error: user defined</title>
+</head>
+<body>
+    <p id="disp"></p>
+    <p id="finally"></p>
+    Input<input type="text" id="inputbox">
+    <button id="btn" onclick="myfunc()" >Click</button>
+<script>
+function myfunc(){
+    let inp1=document.getElementById('inputbox').value;
+    //document.write('val'+inp1)
+    try{
+        if(inp1 === "") throw "empty input"
+        if(isNaN(inp1)) throw "not a number"
+        if(inp1>100) throw "above 100"
+    }
+    catch(e){
+        document.getElementById('disp').innerHTML="error message: "+e;
+    }
+    finally{
+        document.getElementById('finally').innerHTML="input= "+inp1;
+    }
+}
+
+</script>
+</body>
+</html>
